@@ -1,0 +1,109 @@
+
+.preview {
+  font-size: 15px;
+  padding: 10px;
+  background-color: #F1F1F1;
+}
+
+.centering{
+    position: fixed; /* or absolute */
+    top: 30%;
+    left: 20%;
+}
+
+#inputSize{
+  position: relative;
+  top: 10%;
+}
+
+label{
+  font-size: 20px;
+  padding : 8px;
+  color: white;
+}
+
+select{
+    position: relative;
+    top: 10%;
+    padding: 8px;
+}
+
+.array {
+    display: flex;
+    position: relative; 
+    margin: auto;
+  }
+
+  .cell {
+    
+    font-size: 36px;
+    margin: 5px;
+    padding: 10px;
+    
+    background-color: #eee;
+    
+    color: #222;
+    border: 5px solid #eee;
+    border-radius: 5px;
+    position: relative;
+    transition: all .4s ease-in;
+  }
+  
+  .cell.referenced {
+    background-color: #9CEC5B;
+    border-color: #9CEC5B;
+    color: white;
+    transition: all .4s ease-out;
+  }
+  
+  .cell.compared {
+    border-color: #50C5B7;
+    background-color: #50C5B7;
+    color: white; 
+    transition: all .4s ease-out;
+  }
+  
+  .cell.done {
+    border-color: #6184D8;
+    background-color: #6184D8;
+    color: white;
+    transition: .5s;
+  }
+
+  .cell.m-right {
+    animation-name: m-right;
+    animation-duration: 1s;
+  }
+  
+  .cell.m-left {
+    animation-name: m-left;
+    animation-duration: 1s;
+  }
+  
+  @keyframes m-right {
+    0% {
+      left: 0%;
+    }
+    
+    33% {
+      left: 0;
+    }
+  
+    100% {
+      left: 90px;
+    }
+  }
+  
+  @keyframes m-left {
+    0% {
+      right: 0%;
+    }
+    
+    33% {
+      right: 0;
+    }
+  
+    100% {
+      right: 90px;
+    }
+  }

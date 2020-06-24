@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+
+    <title>Slideshow</title>
+</head>
+<body>
+    <div class="row bg-dark p-3">
+        <div class="col-6 text-center text-light">
+            <h1>JavaScript-Slideshow</h1>
+        </div>
+        <div class="col-6 d-flex justify-content-center" id="modeDiv">
+            <select id="showMode">
+                <option value = "man" selected>Manual</option>
+                <option value = "auto">Auto</option>
+            </select>
+            <select class="ml-2" id="selectSec">
+                <option value = "2" selected>2</option>
+                <option value = "3">3</option>
+                <option value = "4">4</option>
+            </select>
+            <button id="startBtn" class="ml-2 p-3">Start Show</button>
+            <button id="stopBtn" class="ml-2 p-3">Stop Show</button>
+        </div>
+    </div>
+
+    <div id="showDiv">
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+
+    <div>
+        <footer class="text-center footer-format">
+            <a href="https://github.com/adityam31/javascript-slideshow" target="_blank">
+                <img src="images/GitHub-Mark-Light-32px.png" alt="Github logo">
+            </a>
+            <br>
+            <strong>Made by - <a href="https://github.com/adityam31" target="_blank">Aditya Mahajan</a></strong>
+        </footer>
+    </div>
+</body>
+</html>
